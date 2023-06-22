@@ -80,7 +80,7 @@ class LoginScreen extends StatelessWidget {
           BlocBuilder<LoginBloc,LoginStates>(builder: (context,state){
 
             if(state is ErrorState){
-              return Text("Note : ${state.errorMessage}",style: const TextStyle(color: Colors.red),);
+              return Text( state.errorMessage,style: const TextStyle(color: Colors.red),);
             }else{
               return Container();
             }
